@@ -1,16 +1,73 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Employee Management System (EMS)
 
-Currently, two official plugins are available:
+This is a simple Employee Management System built using React.  
+The main goal of this project is to understand how role-based systems work in real applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In this system, an Admin can manage employees and assign tasks, while Employees can log in and see only their own tasks.  
+This project is created for learning and practice purposes.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## About the Project
 
-## Expanding the ESLint configuration
+The Employee Management System helps in managing employees and their tasks in a structured way.  
+It has two types of users: **Admin** and **Employee**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The admin can create employees, assign tasks, and track their status.  
+Employees can log in and update the status of the tasks assigned to them.
+
+The project focuses on clean UI, basic performance optimization, and proper project structure.
+
+---
+
+## Features
+
+### Admin
+- Admin login
+- Create employees with a unique Employee ID
+- Assign tasks to employees
+- View task status (New, Active, Completed, Failed)
+
+### Employee
+- Employee login
+- View assigned tasks
+- Update task status
+- Simple and responsive dashboard
+
+---
+
+## Tech Stack
+
+- React
+- Tailwind CSS
+- JavaScript (ES6)
+- Context API
+- LocalStorage
+
+----
+
+## How to Run the Project
+
+Follow these steps to run the project locally:
+
+```bash
+git clone <repository-url>
+cd ems
+npm install
+npm run dev
+
+```
+
+Demo Login Details
+
+These credentials are only for demo and testing purposes.
+
+Admin Login
+
+Email: admin@me.com
+
+Password: 123
+
+The admin credentials are mentioned here in the README and are not shown on the UI.
+
