@@ -59,7 +59,7 @@ npm run dev
 
 ```
 
-Demo Login Details
+## Demo Login Details
 
 These credentials are only for demo and testing purposes.
 
@@ -69,5 +69,76 @@ Email: admin@me.com
 
 Password: 123
 
-The admin credentials are mentioned here in the README and are not shown on the UI.
+Employee Login (Static Accounts)
+
+e1@e.com
+ / 123
+
+e2@e.com
+ / 123
+
+e3@e.com
+ / 123
+
+e4@e.com
+ / 123
+
+e5@e.com
+ / 123
+
+New Employee Signup
+
+New employees can be created using the Signup page
+
+A unique Employee ID is automatically generated
+
+Newly created employees can log in immediately after signup
+
+Login credentials are documented here for demo purposes and are not displayed on the UI.
+
+---
+
+## Project Structure
+src/
+ ├── components/
+ ├── context/
+ ├── pages/
+ ├── utils/
+ └── App.jsx
+
+ -----
+
+## What I Learned From This Project
+
+How to build role-based login in React
+
+Managing global state using Context API
+
+Storing and retrieving data using localStorage
+
+Creating reusable components
+
+Improving performance using memoization techniques
+
+Writing proper project documentation
+
+----
+
+## Future Improvements
+
+Backend authentication and database integration
+
+Password encryption
+
+Role-based protected routes
+
+Pagination for large task lists
+
+Better UI and animations
+
+## Author
+
+Azad Ansari
+BSc IT Student
+Aspiring Frontend Developer
 
