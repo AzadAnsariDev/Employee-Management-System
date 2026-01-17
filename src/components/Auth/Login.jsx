@@ -1,8 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import DemoModal from './DemoModal'
 
 const Login = ({handleLogin}) => {
+
+    const [showDemo, setShowDemo] = useState(false)
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -76,6 +79,14 @@ return (
             Login
           </button>
 
+          <button
+          onClick={() => setShowDemo(true)}
+          className="w-full text-m text-white border border-gray-600 px-1 py-1 rounded cursor-pointer bg-gradient-to-tl from-slate-400 via-slate-700 to-slate-900 hover:scale-102"
+        >
+          Test Purpose (Demo Credentials)
+        </button>
+
+        {showDemo && <DemoModal close={() => setShowDemo(false)} />}
           {/* Signup */}
           <p
             onClick={moveToSignUp}
