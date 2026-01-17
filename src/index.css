@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+html, body, #root{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+#alltask::-webkit-scrollbar{
+  display: none;
+}
+#tasklist::-webkit-scrollbar{
+  display: none;
+}
